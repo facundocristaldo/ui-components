@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { Card, FlipSpinner } from "components";
+import styles from "styles/Home.module.scss";
+import { Card } from "components";
 
 const Home: NextPage = () => {
   return (
