@@ -1,21 +1,16 @@
 import React from "react";
-import { FlipSpinner } from "components";
+import { FlipSpinner, PageContentWrapper } from "components";
+import styles from "./index.module.scss";
 
 const FlipSpinnerPage = () => {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "grid",
-        placeContent: "center",
-      }}
-    >
-      <div style={{ display: "flex", gap: "1em" }}>
+    <PageContentWrapper>
+      <div className={styles.wrapper}>
         <FlipSpinner />
         <FlipSpinner />
         <FlipSpinner />
       </div>
-    </div>
+    </PageContentWrapper>
   );
 };
 

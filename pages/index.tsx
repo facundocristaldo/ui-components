@@ -29,6 +29,13 @@ const Home: NextPage = () => {
             title={"Flip Spinner"}
             subtitle="Animated card flipping around"
           />
+          <Card
+            isLink
+            link={"/bouncy-loader"}
+            className={styles.card}
+            title={"Bouncy Loader"}
+            subtitle="Animated bouncy loader"
+          />
         </div>
       </main>
     </div>
