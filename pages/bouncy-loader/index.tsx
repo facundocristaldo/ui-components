@@ -1,7 +1,8 @@
 import { PageContentWrapper, BouncyLoader } from "components";
+import { NextPage } from "next";
 import React from "react";
 
-const BouncyLoaderPage = () => {
+const BouncyLoaderPage: NextPage = () => {
   return (
     <PageContentWrapper>
       <BouncyLoader />

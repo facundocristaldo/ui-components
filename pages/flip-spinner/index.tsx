@@ -1,8 +1,9 @@
 import React from "react";
 import { FlipSpinner, PageContentWrapper } from "components";
 import styles from "./index.module.scss";
+import { NextPage } from "next";
 
-const FlipSpinnerPage = () => {
+const FlipSpinnerPage: NextPage = () => {
   return (
     <PageContentWrapper>
       <div className={styles.wrapper}>

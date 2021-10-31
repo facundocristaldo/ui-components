@@ -36,6 +36,13 @@ const Home: NextPage = () => {
             title={"Bouncy Loader"}
             subtitle="Animated bouncy loader"
           />
+          <Card
+            isLink
+            link={"/animated-searchbar"}
+            className={styles.card}
+            title={"Animated Search Bar"}
+            subtitle="Animated Search Bar"
+          />
         </div>
       </main>
     </div>
