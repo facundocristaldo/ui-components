@@ -1,13 +1,7 @@
+import { ICardProps } from "interfaces";
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./Card.module.scss";
 
-interface ICardProps {
-  link?: string;
-  isLink: boolean;
-  className: string;
-  title: string;
-  subtitle: string;
-}
 export const Card: React.FC<ICardProps> = ({
   isLink,
   link,

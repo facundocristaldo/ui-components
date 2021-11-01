@@ -1,8 +1,8 @@
-import { Card } from "./Card";
-import { FlipSpinner } from "./FlipSpinner";
-import { BouncyLoader } from "./BouncyLoader";
-import { PageContentWrapper } from "./PageContentWrapper";
-import { AnimatedSearchBar } from "./AnimatedSearchBar";
+import { Card } from "./Card/Card";
+import { FlipSpinner } from "./FlipSpinner/FlipSpinner";
+import { BouncyLoader } from "./BouncyLoader/BouncyLoader";
+import { PageContentWrapper } from "./PageContentWrapper/PageContentWrapper";
+import { AnimatedSearchBar } from "./AnimatedSearchBar/AnimatedSearchBar";
 
 export {
   Card,

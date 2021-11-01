@@ -1,0 +1,71 @@
+@use "styles/variables.scss" as vars;
+
+.container {
+  min-width: 250px;
+}
+.achivement {
+  margin-top: 20px;
+  width: 100%;
+  .bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(30, 30, 30, 0.05);
+    border-radius: 40px;
+    overflow: hidden;
+    .imgBox {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      background-color: #1e1e1e;
+      border-radius: 50%;
+      i {
+        color: #fff;
+      }
+    }
+    p {
+      position: relative;
+      z-index: 1;
+      color: vars.$text-contrast-color; //#1e1e1e;
+      font-size: 18px;
+      font-family: "Open Sans", arial, sans-serif;
+    }
+    .progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(
+        30deg,
+        vars.$primary-color,
+        vars.$secondary-color
+      );
+      border-radius: 20px;
+      transition: 1s ease;
+      animation-name: fill;
+      animation-delay: 0;
+      animation-duration: 1s;
+      animation-iteration-count: "infinite";
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes fill {
+  0% {
+    border-radius: 0 20px 20px 0;
+  }
+  50% {
+    border-radius: 0 15px 15px 0;
+  }
+  100% {
+    border-radius: 0 20px 20px 0;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./AnimatedSearchBar.module.scss";
 import Head from "next/head";
 
 export const AnimatedSearchBar: React.FC = () => {

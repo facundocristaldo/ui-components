@@ -2,8 +2,39 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "styles/Home.module.scss";
 import { Card } from "components";
+import { ICardProps } from "interfaces";
 
 const Home: NextPage = () => {
+  const cards: ICardProps[] = [
+    {
+      isLink: true,
+      link: "/flip-spinner",
+      className: styles.card,
+      title: "Flip Spinner",
+      subtitle: "Animated card flipping around",
+    },
+    {
+      isLink: true,
+      link: "/bouncy-loader",
+      className: styles.card,
+      title: "Bouncy Loader",
+      subtitle: "Animated bouncy loader",
+    },
+    {
+      isLink: true,
+      link: "/animated-searchbar",
+      className: styles.card,
+      title: "Animated Search Bar",
+      subtitle: "Animated Search Bar",
+    },
+    {
+      isLink: true,
+      link: "/progress-bar",
+      className: styles.card,
+      title: "Progress Bar",
+      subtitle: "Animated Progress Bar",
+    },
+  ];
   return (
     <div className={styles.container}>
       <Head>
@@ -22,27 +53,16 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <Card
-            isLink
-            link={"/flip-spinner"}
-            className={styles.card}
-            title={"Flip Spinner"}
-            subtitle="Animated card flipping around"
-          />
-          <Card
-            isLink
-            link={"/bouncy-loader"}
-            className={styles.card}
-            title={"Bouncy Loader"}
-            subtitle="Animated bouncy loader"
-          />
-          <Card
-            isLink
-            link={"/animated-searchbar"}
-            className={styles.card}
-            title={"Animated Search Bar"}
-            subtitle="Animated Search Bar"
-          />
+          {cards.map((card) => (
+            <Card
+              key={card.link}
+              isLink={card.isLink}
+              link={card.link}
+              className={card.className}
+              title={card.title}
+              subtitle={card.subtitle}
+            />
+          ))}
         </div>
       </main>
     </div>

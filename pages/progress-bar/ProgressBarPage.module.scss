@@ -1,0 +1,15 @@
+@use "styles/variables.scss" as vars;
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  button {
+    background: none;
+    margin: 1em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #00000050, 1px 1px vars.$secondary-color inset; //#2fdddd70 inset;
+    i {
+      font-size: 2em;
+    }
+  }
+}

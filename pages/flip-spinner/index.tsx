@@ -1,6 +1,6 @@
 import React from "react";
 import { FlipSpinner, PageContentWrapper } from "components";
-import styles from "./index.module.scss";
+import styles from "./FlipSpinner.module.scss";
 import { NextPage } from "next";
 
 const FlipSpinnerPage: NextPage = () => {
